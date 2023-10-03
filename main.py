@@ -10,6 +10,7 @@ import schemas
 from database import engine, get_db
 from security import utils as sec_utils
 
+# TODO: Manage creation and database changes with alembic
 models.Base.metadata.create_all(bind=engine)
 
 # TODO: Don't let users update other users information. Same with delete
