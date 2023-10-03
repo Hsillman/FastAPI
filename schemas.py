@@ -39,6 +39,10 @@ class UserCreate(UserBase):
     # from the API when reading a user.
     password: str 
 
+class UserInDB(UserBase):
+    hashed_password: str
+    is_active: bool
+
 class UserUpdate(UserBase):
     is_active: bool
     password: str
